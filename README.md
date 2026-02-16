@@ -1,40 +1,23 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Spry Mart
 
-## Getting Started
+A Next.js product listing app with filtering, sorting, and favorites. Browse products from the DummyJSON API, filter by category and rating, sort by price, and save items to your favorites (persisted in localStorage).
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Product listing** — Products loaded from [DummyJSON](https://dummyjson.com/products)
+- **Category filter** — Filter by product category
+- **Rating filter** — Filter by minimum rating (2+, 3+, 4+, 4.5+)
+- **Price sort** — Sort by price low-to-high or high-to-low
+- **Favorites** — Heart products to add/remove from favorites; list view at `/favorites`
+- **Pagination** — 12 items per page with prev/next and page numbers
+- **Persistent favorites** — Favorites stored in `localStorage`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- **Next.js 16** (React 19) with React Compiler
+- **React Context** — `ProductContext` for product data and favorites
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+<img width="1512" height="982" alt="Screenshot 2026-02-16 at 12 28 04 PM" src="https://github.com/user-attachments/assets/74c864df-7e3a-4fa4-8493-4806a3eee58b" />
+<img width="1512" height="982" alt="Screenshot 2026-02-16 at 12 28 22 PM" src="https://github.com/user-attachments/assets/d76eb28f-c9a4-4e38-b032-b15bc31debc6" /><img width="1512" height="982" alt="Screenshot 2026-02-16 at 12 28 37 PM" src="https://github.com/user-attachments/assets/c200217c-afaa-48bf-8f34-c6b7fcbad9a2" />
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
